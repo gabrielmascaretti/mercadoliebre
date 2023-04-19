@@ -1,12 +1,109 @@
 p  {
     font-family:roboto;
+    font-size:12px;
 }
 
 .titulares {
     font-size : 24px;
 }
 
+.precios {
+    font-size : 18px;
+}
+
 .descuentos {
     font-size: 16px;
 }
 
+img {
+    max-width:-webkit-fill-available;
+}
+
+header { 
+    background-color: #EAC926;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.logo { 
+    object-fit: scale-down;
+    object-position: left;
+}
+
+body {
+    margin: 0;
+}
+
+.sin-puntos {
+    list-style-type: none;
+    display: inline;
+}
+
+.burger-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-bars {
+    background-color: #1259c3; /* Cambia el valor a tu color deseado */
+    color: #fff; /* Cambia el valor a tu color deseado */
+    size: 20px;
+    padding: 10px;
+    border-radius: 20%;
+    margin-bottom:20px;
+}
+
+footer {
+    text-align:center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.copyright {
+    text-align:left;
+    margin-top: 15px;
+}
+
+.menunav {
+    text-decoration:none;
+    color:#111111;
+}
+
+.textocpracuota {
+    text-align: center;
+    font-size: 15px;
+}
+
+.fa-credit-card {
+   font-size:xxx-large;
+   margin-bottom:10px;
+   color: #1259c3;
+}
+
+.fa-gift {
+    font-size:xxx-large;
+    margin-bottom:10px;
+    color: #1259c3;
+}
+
+.fa-user-shield {
+    font-size:xxx-large;
+   margin-bottom:10px;
+   color: #1259c3;
+}
+
+.searchbar {
+    background-color:white;
+    border-radius:1px;
+    border-color:black;
+    display:inline;
+    inline-size:max-content;
+    border:ridge;
+}
+
+.fa-magnifying-glass {
+    background-color:white;
+    border:ridge;
+    border-color:black;
+}
