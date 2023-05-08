@@ -1,3 +1,69 @@
+/* Buenas practicas */
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Precio 30% y descuento 70% */
+
+.elementos-producto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;    
+}
+
+.precios {
+    width: 30%;
+    margin-right: 10%;
+    max-width: 30%;
+}
+
+.descuentos {
+    width: 70%;
+    max-width: 70%;
+}
+
+/* Alinear camion entre la imagen y el elemento del producto */
+
+.producto {
+    position: relative;
+  }
+
+.fa-truck {
+    position: absolute;
+    top: -20%;
+    right: 5%;
+}
+
+/* Sección main que esté centrada y ocupe 90% de la pantalla */
+
+main {
+    margin: 10px auto;
+    width: 90%;
+    background-color: #ebebeb;
+    width: 100%;
+    align-items: center;
+}
+
+/* Separación de 10 píxeles entre cada artículo, 15 pixeles en cada uno de sus lados */
+
+article {
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+/* Nos piden que manejemos el logo del envío, el precio, el porcentaje de descuento y la descripción del artículo como elementos de una caja dentro de la caja general del artículo */
+
+.elementos-producto {
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    background-color: white;
+}
+
+
 p  {
     font-family:roboto;
     font-size:12px;
@@ -13,6 +79,7 @@ p  {
 
 .descuentos {
     font-size: 16px;
+    color: #39b54a;
 }
 
 img {
@@ -21,33 +88,45 @@ img {
 
 header { 
     background-color: #EAC926;
-    margin: 0;
     margin-bottom: 5px;
+    padding: 15px;
 }
 
 .logo { 
     object-fit: scale-down;
     object-position: left;
+    display: inline-flex;
+    width: 49%;
+    margin: auto;
 }
 
 body {
     margin: 0;
+    background-color: #ebebeb;
+}
+
+.menu-sin-puntos {
+    display: none; /*ocultar en mobile */
 }
 
 .sin-puntos {
-    list-style-type: none;
-    display: inline;
+    list-style: none;
+}
+
+.login-navbar {
+    display: none; /* ocultar en mobile C19 */
 }
 
 .burger-menu {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: -25px;
 }
 
 .fa-bars {
-    background-color: #1259c3; /* Cambia el valor a tu color deseado */
-    color: #fff; /* Cambia el valor a tu color deseado */
+    background-color: #1259c3; 
+    color: #fff; 
     size: 20px;
     padding: 10px;
     border-radius: 20%;
@@ -56,13 +135,16 @@ body {
 
 footer {
     text-align:center;
-    margin-left: 50px;
-    margin-right: 50px;
+    background-color: #fff;
+    padding: 50px;
+    width: 100%;
 }
 
 .copyright {
     text-align:left;
-    margin-top: 15px;
+    color: black;
+    font-weight: bold;
+    padding-left: 5px;
 }
 
 .menunav {
@@ -73,6 +155,8 @@ footer {
 .textocpracuota {
     text-align: center;
     font-size: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 .fa-credit-card {
@@ -88,18 +172,17 @@ footer {
 }
 
 .fa-user-shield {
-    font-size:xxx-large;
+   font-size:xxx-large;
    margin-bottom:10px;
    color: #1259c3;
 }
 
-.searchbar {
+.barra-busqueda {
     background-color:white;
     border-radius:1px;
     border-color:black;
-    display:inline;
-    inline-size:max-content;
-    border:ridge;
+    display:inline-flex;
+    width: 49%;
 }
 
 .fa-magnifying-glass {
@@ -107,3 +190,193 @@ footer {
     border:ridge;
     border-color:black;
 }
+
+.fa-solid.fa-truck {
+    color: #39b54a;
+    padding: 5px;
+    transition: transform 0.5s ease;
+    border: 1px;
+    border-color: #39b54a;
+    border-radius: 50px;
+    border-style: solid;
+}
+
+/* BREAKDOWNS TABLET Y DESKTOP */
+
+@media (min-width: 361px){
+    /* Tablets */   
+
+    .menu-sin-puntos {
+        list-style: none;
+        display: inline-flex;
+        width: 35%;
+        justify-content: space-between;
+        margin-top: 10px;
+        margin-left: 15px;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }    
+    
+    .login-navbar {
+        list-style: none;
+        display: inline-flex;
+        justify-content: space-between;
+        width: 35%;
+        margin-top: 10px;
+        margin-right: 15px;
+        float:right;
+        font-size: 14px;
+    }
+    
+    section {
+        /* Agrega un ancho máximo para el contenedor de los artículos */
+        max-width: 100%;
+      }
+      
+      article {
+        /* Establece una anchura fija para cada artículo */
+        width: 49%;
+        display: inline-block; /* Muestra los artículos en línea */
+      }
+      
+    .burger-menu {
+        display: none;
+    }  
+    
+    .topheader {
+        max-width: 100%;
+    }
+    
+    .logo {
+        width: 33%;
+    }
+    
+    .textocpracuota {
+        display: inline-flex;
+    }
+    
+    .barra-busqueda {
+        display: inline;
+    }
+    
+    
+}    
+
+@media (min-width: 769px){
+    /* Desktop */
+
+/* Modificación del footer */
+
+.sin-puntos {
+    display: inline-flex;
+    margin-top: 15px;
+    padding: 50px;
+}
+
+.producto {
+    box-shadow: 0px 0px 5px rgb(100, 100, 100);
+}
+
+.producto:hover {
+        box-shadow: 0px 0px 15px rgb(100, 100, 100);
+}
+
+.menu-sin-puntos {
+    list-style: none;
+    display: inline-flex;
+    width: 35%;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}    
+
+.login-navbar {
+    list-style: none;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 35%;
+    margin-top: 10px;
+    margin-right: 15px;
+    float:right;
+}
+
+section {
+    /* Agrega un ancho máximo para el contenedor de los artículos */
+    max-width: 100%;
+  }
+  
+  article {
+    /* Establece una anchura fija para cada artículo */
+    width: 24%;
+    display: inline-block; /* Muestra los artículos en línea */
+  }
+  
+.burger-menu {
+    display: none;
+}  
+
+.topheader {
+    max-width: 100%;
+}
+
+.logo {
+    width: 33%;
+}
+
+.textocpracuota {
+    display: inline-flex;
+}
+
+.searchbar {
+    display: inline;
+}
+
+
+}
+
+
+/* Transiciones Hover */
+
+.descriproducto {
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 10px;
+    text-align: center;
+    transition: opacity 0.5s;
+  }
+  
+  .producto:hover .descriproducto {
+    opacity: 1;
+  }
+
+  .fa-truck:hover {
+    transform: rotate(-90deg);
+    color: #39b54a;
+    padding: 5px;
+    border: 1px;
+    border-color: #39b54a;
+    border-radius: 50px;
+    border-style: solid;
+    z-index: 500;
+}
+
+@media screen and (max-width: 360px) {
+    .barra-busqueda {
+      width: 49%;
+      max-width: 49%;
+      box-sizing: border-box;
+      display: inline-flex;
+    }
+    .barra-busqueda input[type="text"] {
+      width: 80%;
+      margin-right: 10px;
+    }
+    .barra-busqueda button {
+      width: 20%;
+    }
+  }
