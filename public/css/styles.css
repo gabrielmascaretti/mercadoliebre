@@ -26,11 +26,117 @@
     max-width: 70%;
 }
 
+/* Register Campo */
+
+.user-register-title {
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    border-color: transparent;
+    font-size: 32px;
+    padding: 10px;
+}
+
+.reg-nom-y-ape {
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+    border-color: transparent;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.reg-username {
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+    border-color: transparent;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.reg-email {
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+    border-color: transparent;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.reg-fechadenacimiento {
+    width: 80%;
+    text-align: center;    
+    border-radius: 5px;
+    border-color: transparent;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.reg-domicilio {
+    width: 80%;
+    text-align: center;    
+    border-radius: 5px;
+    border-color: transparent;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.reg-perfildeusuario {
+    width: 10%;
+    text-align: center;
+    display: inline-flex;
+    margin:-15px;
+}
+
+.reg-intereses {
+    display: block;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.reg-password {
+    width: 80%;
+    text-align: center;   
+    border-radius: 5px;
+    border-color: transparent;
+    font-size: 14px;
+    padding: 10px; 
+}
+
+.reg-confirm-password {
+    width: 80%;
+    text-align: center; 
+    border-radius: 5px;
+    border-color: transparent;
+    font-size: 14px;
+    padding: 10px;   
+}
+
+.reg-boton {
+    display: inline-flex;
+    width: 30%;
+    margin: 5px;
+    background-color:#1259c3;
+    color: white;
+    border-radius: 5px;
+    border-color: transparent;
+    width: 80%;
+    margin: 0px -20px 20px -20px;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.reg-boton:hover {
+    background-color:#0022aa;
+}
+
 /* Alinear camion entre la imagen y el elemento del producto */
 
 .producto {
     position: relative;
   }
+
 
 .fa-truck {
     position: absolute;
@@ -161,19 +267,20 @@ footer {
 
 .fa-credit-card {
    font-size:xxx-large;
-   margin-bottom:10px;
+   margin: -20px 15px 15px 15px;
    color: #1259c3;
+
 }
 
 .fa-gift {
     font-size:xxx-large;
-    margin-bottom:10px;
+    margin:15px;
     color: #1259c3;
 }
 
 .fa-user-shield {
    font-size:xxx-large;
-   margin-bottom:10px;
+   margin:15px;
    color: #1259c3;
 }
 
@@ -181,8 +288,9 @@ footer {
     background-color:white;
     border-radius:1px;
     border-color:black;
-    display:inline-flex;
+    display:inline;
     width: 49%;
+    border-radius: 5;
 }
 
 .fa-magnifying-glass {
@@ -206,8 +314,10 @@ footer {
     color: white;
     border-radius: 5px;
     border-color: transparent;
-    min-width: -webkit-fill-available;
-    margin: 0px -20px 0px -20px;
+    width: 80%;
+    margin: 0px -20px 20px -20px;
+    font-size: 14px;
+    padding: 10px;
 }
 
 .boton-enviar:hover {
@@ -218,8 +328,29 @@ footer {
     text-align: center;
 }
 
+.formularioDeRegistro {
+    text-align: center;
+}
+
 .login1 {
     display: none;
+}
+
+.campologin1 {
+    margin-top: 20px;
+    width: 80%;
+    border-radius: 5px;
+    border-color: transparent;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.campologin2 {
+    width: 80%;
+    border-radius: 5px;
+    border-color: transparent;
+    font-size: 14px;
+    padding: 10px;
 }
 
 .login2 {
@@ -230,6 +361,10 @@ footer {
 
 @media (min-width: 361px){
     /* Tablets */   
+
+    .fa-credit-card {
+        margin: 15px 15px 15px 15px;
+     }
 
     .menu-sin-puntos {
         list-style: none;
@@ -279,10 +414,6 @@ footer {
         display: inline-flex;
     }
     
-    .barra-busqueda {
-        display: inline;
-    }
-    
     
 }    
 
@@ -290,6 +421,10 @@ footer {
     /* Desktop */
 
 /* Modificación del footer */
+
+.fa-credit-card {
+    margin: 15px 15px 15px 15px;
+ }
 
 .sin-puntos {
     display: inline-flex;
@@ -342,6 +477,7 @@ section {
 
 .topheader {
     max-width: 100%;
+    text-align: center;
 }
 
 .logo {
@@ -351,11 +487,6 @@ section {
 .textocpracuota {
     display: inline-flex;
 }
-
-.searchbar {
-    display: inline;
-}
-
 
 }
 
@@ -404,3 +535,7 @@ section {
       width: 20%;
     }
   }
+
+.footer-sin-puntos {
+    margin: 20px;
+}
