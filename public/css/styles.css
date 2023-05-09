@@ -201,6 +201,23 @@ footer {
     border-style: solid;
 }
 
+.boton-enviar {
+    background-color:#1259c3;
+    color: white;
+    border-radius: 5px;
+    border-color: transparent;
+    min-width: -webkit-fill-available;
+    margin: 0px -20px 0px -20px;
+}
+
+.boton-enviar:hover {
+    background-color: #0022aa;
+}
+
+.formulario-login {
+    text-align: center;
+}
+
 /* BREAKDOWNS TABLET Y DESKTOP */
 
 @media (min-width: 361px){
