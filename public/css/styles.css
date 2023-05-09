@@ -218,6 +218,14 @@ footer {
     text-align: center;
 }
 
+.login1 {
+    display: none;
+}
+
+.login2 {
+    display: none;
+}
+
 /* BREAKDOWNS TABLET Y DESKTOP */
 
 @media (min-width: 361px){
