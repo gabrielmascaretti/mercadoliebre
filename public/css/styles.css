@@ -177,6 +177,11 @@ p  {
 
 .titulares {
     font-size : 24px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
 }
 
 .precios {
@@ -194,7 +199,6 @@ img {
 
 header { 
     background-color: #EAC926;
-    margin-bottom: 5px;
     padding: 15px;
 }
 
@@ -209,6 +213,7 @@ header {
 body {
     margin: 0;
     background-color: #ebebeb;
+    min-width: 300px;
 }
 
 .menu-sin-puntos {
@@ -242,7 +247,7 @@ body {
 footer {
     text-align:center;
     background-color: #fff;
-    padding: 50px;
+    padding: 25px;
     width: 100%;
 }
 
@@ -282,21 +287,6 @@ footer {
    font-size:xxx-large;
    margin:15px;
    color: #1259c3;
-}
-
-.barra-busqueda {
-    background-color:white;
-    border-radius:1px;
-    border-color:black;
-    display:inline;
-    width: 49%;
-    border-radius: 5;
-}
-
-.fa-magnifying-glass {
-    background-color:white;
-    border:ridge;
-    border-color:black;
 }
 
 .fa-solid.fa-truck {
@@ -365,27 +355,6 @@ footer {
     .fa-credit-card {
         margin: 15px 15px 15px 15px;
      }
-
-    .menu-sin-puntos {
-        list-style: none;
-        display: inline-flex;
-        width: 35%;
-        justify-content: space-between;
-        margin-top: 10px;
-        margin-left: 15px;
-        margin-bottom: 10px;
-        font-size: 14px;
-    }    
-    
-    .login-navbar {
-        list-style: none;
-        display: inline-flex;
-        justify-content: space-between;
-        margin-top: 10px;
-        margin-right: 15px;
-        float:right;
-        font-size: 14px;
-    }
     
     section {
         /* Agrega un ancho máximo para el contenedor de los artículos */
@@ -398,22 +367,6 @@ footer {
         display: inline-block; /* Muestra los artículos en línea */
       }
       
-    .burger-menu {
-        display: none;
-    }  
-    
-    .topheader {
-        max-width: 100%;
-    }
-    
-    .logo {
-        width: 33%;
-    }
-    
-    .textocpracuota {
-        display: inline-flex;
-    }
-    
     
 }    
 
@@ -475,15 +428,6 @@ section {
     display: none;
 }  
 
-.topheader {
-    max-width: 100%;
-    text-align: center;
-}
-
-.logo {
-    width: 33%;
-}
-
 .textocpracuota {
     display: inline-flex;
 }
@@ -520,22 +464,71 @@ section {
     z-index: 500;
 }
 
-@media screen and (max-width: 360px) {
-    .barra-busqueda {
-      width: 49%;
-      max-width: 49%;
-      box-sizing: border-box;
-      display: inline-flex;
-    }
-    .barra-busqueda input[type="text"] {
-      width: 80%;
-      margin-right: 10px;
-    }
-    .barra-busqueda button {
-      width: 20%;
-    }
-  }
-
 .footer-sin-puntos {
     margin: 20px;
 }
+
+/* Cambios en el header */
+
+.topheader {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .logo-wrapper {
+    flex: 1 1 auto;
+    margin-right: 20px;
+    text-align: left;
+  }
+  
+  .logo {
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+  }
+  
+  .search-wrapper {
+    flex: 1 1 auto;
+    margin-right: 20px;
+    text-align: center;
+  }
+  
+  .barrabusqueda {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  input[type="text"] {
+    border: none;
+    margin-right: 10px;
+  }
+  
+  button[type="submit"] {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+  }
+  
+  @media (min-width: 768px){
+    .topheader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .main-navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .topheader {
+        border: red 1px solid;
+    }
