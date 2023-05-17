@@ -195,6 +195,7 @@ h2 {
 
 img {
     max-width:-webkit-fill-available;
+    border-style: none;
 }
 
 header { 
@@ -494,28 +495,39 @@ section {
     text-align: center;
   }
   
-  .barrabusqueda {
-    display: flex;
+  .searchbar {
     align-items: center;
-    justify-content: space-between;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    padding: 10px;
+    flex-wrap: nowrap;
+    border-radius: 10px;
     background-color: white;
   }
-  
-  input[type="text"] {
+
+  .searchbar input {
+    display: flex;
+    padding-left: 10px;
     border: none;
-    margin-right: 10px;
-  }
-  
-  button[type="submit"] {
-    background: none;
+    outline: 0;
+    border-radius: 5px;
+    width: 35vw;
+}
+
+.searchbar button {
     border: none;
-    padding: 0;
-    margin: 0;
-    cursor: pointer;
-  }
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.button, input {
+    overflow: visible;
+}
+
+.button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0px;
+}
   
   @media (min-width: 768px){
     .topheader {
@@ -531,4 +543,10 @@ section {
 
     .topheader {
         border: red 1px solid;
+    }
+
+    /* Home Banner */
+
+    .imagen-banner {
+        width: 100vw;
     }
